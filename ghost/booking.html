@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Reservation - Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Bus Ticket</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buses.html">Buses</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reservation-form">
+        <h2>Reservation Form</h2>
+
+        <!-- Add a bus image here -->
+        <img src="bus.jpg" alt="Bus Image" class="bus-image">
+
+        <form>
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" required>
+
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" required>
+
+            <label for="date">Date of Journey:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" name="seats" min="1" max="10" required>
+
+            <button type="submit">Reserve</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bus Reservation System</p>
+    </footer>
+</body>
+</html>
